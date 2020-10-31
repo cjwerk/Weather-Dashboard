@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Times New Roman', Times, serif;
-    background: white;
+    background: lightcyan;
 }
 
 .header {
@@ -45,7 +45,7 @@ input[type="submit"] {
 .display {
     text-align: center;
     width: 50%;
-    background: white;
+    background: lightcyan;
     height: 40vh;
     margin: 50px auto;
     border-radius: 2px;
