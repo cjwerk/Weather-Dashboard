@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dasboard</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
+    <!-- main -->
 
-<div class="input">
-    <input type="text" class="inputValue" placeholder="Enter a city">
-    <input type="submit" value="Submit" class="button">
-</div>
+    <div class="header">
+        <h1> Weather Dashboard</h1>
+        <p>Enter any city name in the input box below to get the data</p>
+    </div>
 
-<div class="display">
-    <h1 class="name"></h1>
-    <p class="desc"></p>
-    <p class="temp"></p>
-</div>
 
+
+    <div class="input">
+        <input type="text" class="inputValue" placeholder="Enter a city">
+        <input type="submit" value="Submit" class="button">
+    </div>
+
+    <div class="container">
+        <div class="display">
+            <h1 class="name" id="name"></h1>
+            <p class="clouds"></p>
+            <p class="desc"></p>
+            <p class="temp"></p>
+        </div>
+    </div>
 
 
 
 
     <script src="./assets/JS/script.js"></script>
 </body>
+
 </html>
