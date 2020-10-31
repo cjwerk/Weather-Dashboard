@@ -1,16 +1,13 @@
-var button = document.querySelector('.button');
-var inputValue = document.querySelector('.inputValue');
-var name = document.querySelector('.name');
-var desc = document.querySelector('.desc');
+var input = document.querySelector('.input_text');
+var main = document.querySelector('#name');
 var temp = document.querySelector('.temp');
+var desc = document.querySelector('.desc');
 var clouds = document.querySelector('.clouds');
-var apiKey = "60ce7466ebde7b0aecd67dbb4864a061";
+var button = document.querySelector('.submit');
 
 
-
-function getWeather() {
-  console.log("https://api.openweathermap.org/data/2.5/weather?q=" + inputValue.value + "&appid=" + apiKey + "&units=metric");
-  fetch("https://api.openweathermap.org/data/2.5/weather?q=" + inputValue.value + "&appid=" + apiKey + "&units=metric")
+button.addEventListener('click', function (name) {
+  fetch('https://api.openweathermap.org/data/2.5/weather?q=' + input.value + '&appid=60ce7466ebde7b0aecd67dbb4864a061')
     .then(response => response.json())
     .then(data => {
       var tempValue = data['main']['temp'];
@@ -20,10 +17,9 @@ function getWeather() {
       main.innerHTML = nameValue;
       desc.innerHTML = "Desc - " + descValue;
       temp.innerHTML = "Temp - " + tempValue;
-      input.Value = "";
+      input.value = "";
 
     })
 
-    .catch(error => alert("Wrong city name!"));
-};
-
+    .catch(err => alert("Wrong city name!"));
+})

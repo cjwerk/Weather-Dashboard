@@ -1,62 +1,64 @@
 *{
-    margin: 0;
+    margin:0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: 'Times New Roman', Times, serif;
-    background: lightcyan;
-}
-
-.header {
+  }
+  
+  body{
+    font-family: "Nunito",sans-serif;
+    background: #f8f8f8;
+  }
+  
+  .input{
     text-align: center;
-    font-weight: bold;
-}
-
-.input {
-text-align: center;
-margin: 100px 0;
-}
-
-input[type="text"] {
-    height: 50px;
-    width: 600px;
-    background: white;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: 20px;
+    margin: 100px auto;
+  }
+  
+  input[type="submit"]{
+    padding: 15px 30px;
+    background: #e7e7e7;
     border: none;
-    border-radius: 2px;
-    padding: 10px 10px;
-}
-
-input[type="submit"] {
-    height: 50px;
-    width: 600px;
-    background: white;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
+    border-radius: 1px;
+    font-family: "Nunito",sans-serif;
+    font-weight:bold;
     font-size: 20px;
+  }
+  
+  .input input[type="text"]{
+    width: 600px;
+    height: 55px;
+    padding: 5px 10px;
+    background: #e7e7e7;
     border: none;
-    border-radius: 2px;
-}
-
-.display {
-    text-align: center;
+    border-radius: 1px;
+    font-family: "Nunito",sans-serif;
+    font-weight:bold;
+    font-size: 20px;
+  }
+  
+  .card{
     width: 50%;
-    background: lightcyan;
+    background: #e7e7e7;
     height: 40vh;
     margin: 50px auto;
     border-radius: 2px;
-
-}
-
-.display h1 {
+  }
+  
+  
+  .close{
+    float: right;
+    margin-top: -2px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  .card h1{
     padding: 5px 0;
-}
-
-.display p {
-    margin: 40px 0;
-    font-size: 20px;
-}
+    text-align: center;
+  }
+  
+  .card p{
+    text-align: center;
+    margin:40px 0;
+    font-size:20px;
+  }
