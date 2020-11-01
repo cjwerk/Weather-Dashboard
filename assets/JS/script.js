@@ -6,6 +6,7 @@ var clouds = document.querySelector('.clouds');
 var button = document.querySelector('.submit');
 var savedLocations = [];
 var currentLoc;
+document.getElementById("demo").innerHTML = Date();
 
 button.addEventListener('click', function (name) {
   fetch('https://api.openweathermap.org/data/2.5/weather?q=' + input.value + '&units=metric&appid=60ce7466ebde7b0aecd67dbb4864a061')
@@ -35,5 +36,5 @@ function initialize() {
     currentLoc = savedLocations[savedLocations.length - 1];
     showPrevious();
     getCurrent(currentLoc);
-  }
-}
+  };
+};
