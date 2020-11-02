@@ -1,16 +1,23 @@
 var input = document.querySelector('.input_text');
-var main = document.querySelector('#name');
-var temp = document.querySelector('.temp');
-var desc = document.querySelector('.desc');
-var clouds = document.querySelector('.clouds');
-var button = document.querySelector('.submit');
-var humidity = document.querySelector('humidity');
-var windSpeed = document.querySelector('wind-speed');
-var savedLocations = [];
-var currentLoc;
-var key = "60ce7466ebde7b0aecd67dbb4864a061";
-var url = "https://api.openweathermap.org/data/2.5/forecast";
-document.getElementById("demo").innerHTML = Date();
+var searchBtn = $(".searchBtn");
+var searchInput = $(".searchInput");
+
+var cityNameEl = $(".cityName");
+var currentDateEl = $(".currentDate");
+var weatherIconEl = $(".weatherIcon");
+var searchHistoryEl = $(".historyItems");
+
+var tempEl = $(".temp");
+var humidityEl = $(".humidity");
+var windSpeedEl = $(".windSpeed");
+var uvIndexEl = $(".uvIndex");
+var cardRow = $(".card-row");
+
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0');
+var yyyy = today.getFullYear();
+var today = mm + '/' + dd + '/' + yyyy;
 
 
 
